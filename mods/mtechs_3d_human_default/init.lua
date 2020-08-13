@@ -23,7 +23,7 @@ mod.slots = {
     wearable_slot_foot_right = 'wearable_slot_foot_right',
     wearable_slot_foot_left = 'wearable_slot_foot_left',
   }
-]]--
+
 
 local model = {
   mesh = '',
@@ -35,4 +35,4 @@ local model = {
         },
     },
     
-}
+}]]--

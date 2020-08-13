@@ -1,5 +1,5 @@
 minetest.register_on_joinplayer(function(player)
-  local scale = 2
+  local scale = 1
 	player:set_properties({
     visual_size = {x = scale, y = scale},
 		collisionbox = {
@@ -10,7 +10,7 @@ minetest.register_on_joinplayer(function(player)
       1.7 * scale, 
       0.3 * scale
     },
-    stepheight = 0.6 * scale,
+    stepheight = 1.1 * scale,
     eye_height = 1.625 * scale
   })
 

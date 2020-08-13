@@ -8,19 +8,19 @@ function ml.mtechs_lbm(position, node)
   local components = {position_cid}
   
   -- fall if nothing under
-  if gig(node.name, ml.append_mod_name('falling') ~= 0 then
+  if gig(node.name, ml.append_mod_name('falling')) ~= 0 then
     local cid = mtechs.get_cid_by_name('falling_node')
     components[#components + 1] = cid
   end
   
   -- fall if greater than 45 degree slope
-  if gig(node.name, ml.append_mod_name('45_angle_of_repose') ~= 0 then
+  if gig(node.name, ml.append_mod_name('45_angle_of_repose')) ~= 0 then
     local cid = mtechs.get_cid_by_name('_45_angle_of_repose')
     components[#components + 1] = cid
   end
   
   -- pile into 45 degree slope when stopping
-  if gig(node.name, ml.append_mod_name('45_angle_stacking') ~= 0 then
+  if gig(node.name, ml.append_mod_name('45_angle_stacking')) ~= 0 then
     local cid = mtechs.get_cid_by_name('_45_angle_stacking')
     components[#components + 1] = cid
   end

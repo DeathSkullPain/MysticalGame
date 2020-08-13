@@ -909,12 +909,7 @@ local mgv7_spflags = minetest.get_mapgen_setting("mgv7_spflags") or
 local captures_float = string.match(mgv7_spflags, "floatlands")
 local captures_nofloat = string.match(mgv7_spflags, "nofloatlands")
 
--- Get setting or default
--- Make global for mods to use to register floatland biomes
-default.mgv7_floatland_level =
-	minetest.get_mapgen_setting("mgv7_floatland_level") or 1280
-default.mgv7_shadow_limit =
-	minetest.get_mapgen_setting("mgv7_shadow_limit") or 1024
+
 
 minetest.clear_registered_biomes()
 minetest.clear_registered_ores()
@@ -930,7 +925,7 @@ local ocean_max = -4
 local shore_max = 4
 local max = 100
 local mountain_max = 200
-local upper_limit = default.mgv7_shadow_limit - 1
+local upper_limit = 1000
 
 if mg_name == "v6" then
 	--default.register_mgv6_ores()

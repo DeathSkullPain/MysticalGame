@@ -62,6 +62,7 @@ function m.get_systems_for_components(self, components)
       
       if found_all then
         systems[#systems + 1] = sid
+      end
     end
     
     return systems

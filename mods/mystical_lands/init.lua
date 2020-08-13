@@ -25,23 +25,3 @@ local inits = {
 for index, init in pairs(inits) do
   dofile(path .. init .. '.lua')
 end 
-
-
-  --[[
-  reg(
-  mod .. 'wardstone_purple',
-  {
-    description = 'Purple wardstone',
-    tiles = {'mystical_lands_wardstone_purple.png'},
-    use_texture_alpha = true,
-    light_source = 6,
-    drawtype = 'glasslike',
-    paramtype = "light",
-    sunlight_propagates = true,
-    is_ground_content = false,
-    diggable = true,
-      --sounds = default.node_sound_stone_defaults(),
-    groups = {cracky = 3},
-    }
-  )
-        ]]--

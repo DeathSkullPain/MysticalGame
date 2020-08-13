@@ -22,18 +22,15 @@ m.systems = {
         actions = { m.actions.a_mtechs_nodes_check_supported },
         components = { m.components.c_mtechs_nodes_falling },
         handle = function(self, action)
-            if not action.data then return
-            if not action.data.pos then return
+            if not action.data then return end
+            if not action.data.pos then return end
               
             local eid = mtechs:get_node_eid_at_position(action.data.pos)
-            if not eid then return
-            if not self.entities[eid] then return
-              
-            
+            if not eid then return end
+            if not self.entities[eid] then return end
           end,
     },
 }
-
 
 for i,aid in ipairs(m.actions) do
     mtechs:register_action(aid)
@@ -103,6 +100,7 @@ function m.get_systems_for_components(self, components)
       
       if found_all then
         systems[#systems + 1] = sid
+      end
     end
     
     return systems

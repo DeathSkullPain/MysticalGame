@@ -1,0 +1,1 @@
+mtechs_effects = {}
